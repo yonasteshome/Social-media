@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "postinstall": "npm rebuild bcrypt",
+   "start":"node server.js"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
